@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AeroVerde: Operação Amazónia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon">🎮</span>
+            <span class="brand-name">[NOME DO PROJETO]</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="btn-secondary">← [VOLTAR PARA A APRESENTAÇÃO]</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <section class="instructions-card">
+            <h2>[COMO JOGAR]</h2>
+            <p>[TEXTO EXPLICANDO O OBJETIVO DO JOGO E O QUE O JOGADOR PRECISA FAZER FAZER PARA VENCER.]</p>
+
+            <div class="controls-grid">
+                <div class="control-box">
+                    <span class="key-badge">W A S D</span>
+                    <span>[MOVER / PILOTAR]</span>
+                </div>
+                <div class="control-box">
+                    <span class="key-badge">ESPAÇO</span>
+                    <span>[AÇÃO 1 - EX: SOLTAR ÁGUA]</span>
+                </div>
+                <div class="control-box">
+                    <span class="key-badge">TECLA S</span>
+                    <span>[AÇÃO 2 - EX: PLANTAR SEMENTE]</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-area">
+            <div class="canvas-container">
+                <canvas id="gameCanvas" width="850" height="480"></canvas>
+            </div>
+            <div class="game-actions">
+                <button id="startBtn" class="btn-primary btn-large">[INICIAR MISSÃO]</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>[SEU NOME / NOME DA EQUIPE OU ESCOLA] — [ANO]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

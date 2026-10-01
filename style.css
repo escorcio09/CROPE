@@ -1,0 +1,250 @@
+/* RESET E CORES BASE (TEMA ESCURO NOITE) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b1329;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    background-color: #0f172a;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-link {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    transition: color 0.2s;
+}
+
+.btn-link:hover, .btn-link.active {
+    color: #38bdf8;
+}
+
+.btn-primary {
+    background-color: #10b981;
+    color: #064e3b;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* NAVEGAÇÃO DE PÁGINAS (CONTAINERS) */
+.view-container {
+    display: none;
+    padding: 2.5rem;
+    flex: 1;
+}
+
+.view-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BLOCO PRINCIPAL (HERO CARD) */
+.hero-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 3.5rem 3rem;
+    max-width: 820px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.badge {
+    color: #10b981;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.hero-description {
+    color: #cbd5e1;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn-action {
+    background-color: #10b981;
+    color: #022c22;
+    border: none;
+    padding: 1rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-action:hover {
+    background-color: #059669;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+/* PÁGINA 2: SEÇÕES 1, 2 E 3 */
+.secoes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 2rem;
+}
+
+.secoes-header h2 {
+    font-size: 1.8rem;
+    color: #f8fafc;
+}
+
+.btn-primary-large {
+    background-color: #10b981;
+    color: #064e3b;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.8rem;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.info-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-number {
+    color: #3b82f6;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.card-text {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.secoes-footer {
+    margin-top: 2.5rem;
+}
+
+.btn-secondary {
+    background-color: #334155;
+    color: #f8fafc;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* PÁGINA 3: JOGO */
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.game-controls-help {
+    background-color: #1e293b;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #38bdf8;
+    border: 1px solid #334155;
+}
+
+#gameCanvas {
+    background-color: #0f172a;
+    border: 2px solid #334155;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn-start-game {
+    background-color: #10b981;
+    color: #022c22;
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}

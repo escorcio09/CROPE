@@ -3,66 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guardião do Verde - Justificativa e Propósito</title>
+    <title>Guardião do Verde</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <h1>🌱 Guardião do Verde</h1>
-            <p>Projeto de Programação Educacional e Conscientização Ambiental</p>
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">🌱</span>
+            <span class="logo-text">Guardião do Verde</span>
         </div>
-        <nav>
-            <a href="index.html" class="active">A Justificativa</a>
-            <a href="jogo.html" class="btn-nav">Ir para o Jogo 🚁</a>
+        <nav class="nav-links">
+            <button id="navApresentacao" class="btn-link active" onclick="mostrarHero()">Começo de Tudo</button>
+            <button id="navJogo" class="btn-primary" onclick="mostrarJogo()">JOGAR: AeroVerde: Operação Amazónia</button>
         </nav>
     </header>
 
-    <main class="container">
-        
-        <section class="card-artigo">
-            <h2 class="section-title">1. O Desafio Ambiental Global: A Urgência das Queimadas</h2>
-            <p>
-                As queimadas florestais e o desmatamento desenfreado representam uma das crises ecológicas mais graves do século XXI. Todos os anos, milhões de hectares de vegetação nativa são consumidos pelo fogo em diversas regiões do planeta, com impacto devastador na Floresta Amazônica, no Cerrado e no Pantanal. 
+    <!-- PÁGINA 1: TELA INICIAL (APENAS O BLOCO GRANDE) -->
+    <main id="viewHero" class="view-container active">
+        <section class="hero-card">
+            <span class="badge">PROJETO EDUCACIONAL</span>
+            <h1 class="hero-title">Guardião do Verde</h1>
+            <p class="hero-description">
+                O projeto <strong>Guardião do Verde</strong> é uma plataforma educacional e interativa desenvolvida para unir tecnologia e conscientização ambiental no combate ao desmatamento na Amazônia. Através de uma experiência prática, o trabalho demonstra como simulações digitais e mecânicas interativas podem aproximar a sociedade da realidade da floresta, reforçando a urgência da preservação do nosso ecossistema.
             </p>
-            <p>
-                Esse processo destrói habitats naturais, ameaça espécies em extinção e lança bilhões de toneladas de dióxido de carbono ($CO_2$) na atmosfera. A destruição da cobertura vegetal acelera o aquecimento global, altera os ciclos de chuva e deteriora a qualidade do ar, afetando diretamente a saúde humana e o equilíbrio dos ecossistemas globais.
-            </p>
+            <button class="btn-action" onclick="mostrarSecoes()">Descubra mais sobre nosso projeto</button>
         </section>
-
-        <section class="card-artigo">
-            <h2 class="section-title">2. Por Que Escolhi Este Tema?</h2>
-            <p>
-                A escolha do tema <strong>"Guardião do Verde"</strong> nasceu da necessidade urgente de conectar a tecnologia com a educação ambiental prática. Muitas vezes, a discussão sobre preservação permanece no campo teórico. Escolhi este projeto para provar que o desenvolvimento de software e a lógica de programação podem ser ferramentas poderosas de engajamento social.
-            </p>
-            <p>
-                Ao criar uma simulação em que o jogador precisa tomar decisões rápidas entre apagar incêndios e plantar novas árvores, o projeto traduz a complexidade da gestão ambiental em uma experiência interativa e educativa. O objetivo é despertar no público o senso de responsabilidade individual e coletiva em relação ao nosso patrimônio natural.
-            </p>
-        </section>
-
-        <section class="card-artigo">
-            <h2 class="section-title">3. O Papel da Tecnologia na Preservação Ambiental</h2>
-            <p>
-                A tecnologia moderna deixou de ser apenas uma ferramenta industrial para se tornar uma aliada fundamental na conservação da natureza. Hoje, drones equipados com sensores térmicos e sistemas de inteligência artificial são utilizados para monitorar focos de incêndio em áreas de difícil acesso, permitindo respostas rápidas antes que o fogo se alastre.
-            </p>
-            <p>
-                Além disso, drones de reflorestamento são capazes de disparar cápsulas de sementes nativas com alta precisão sobre solos degradados, acelerando o processo de recuperação florestal em escala que seria inviável manualmente. Este projeto simula exatamente essa sinergia entre robótica, computação e ecologia.
-            </p>
-        </section>
-
-        
-        <div class="cta-container">
-            <h3>Pronto para assumir o controle da missão?</h3>
-            <p>Acesse o simulador e ajude a combater as queimadas enquanto recupera a floresta nativa.</p>
-            <a href="jogo.html" class="btn-destaque">Acessar o Jogo Interativo 🚁</a>
-        </div>
-
     </main>
 
-    <footer>
-        <p>Projeto Educacional "Guardião do Verde" — Desenvolvimento Web para Competições de Programação.</p>
-    </footer>
+    <!-- PÁGINA 2: SEÇÕES 1, 2 E 3 -->
+    <main id="viewSecoes" class="view-container hidden">
+        <div class="secoes-header">
+            <h2>Conheça o Projeto Guardião do Verde</h2>
+            <button class="btn-primary-large" onclick="mostrarJogo()">[IR PARA O JOGO INTERATIVO 🎮]</button>
+        </div>
 
+        <section class="cards-grid">
+            <!-- SEÇÃO 1 -->
+            <article class="info-card">
+                <span class="card-number">01</span>
+                <h3 class="card-title">O Desafio Amazônico</h3>
+                <p class="card-text">
+                    O avanço do desmatamento na Amazônia representa uma das ameaças mais graves ao equilíbrio climático global. A perda da cobertura vegetal compromete a biodiversidade, altera o regime de chuvas em diversas regiões e acelera os impactos das mudanças climáticas no nosso dia a dia.
+                </p>
+                <p class="card-text">
+                    A distância geográfica faz frequentemente com que a gravidade deste cenário pareça distante da população. A ausência de ferramentas visuais e acessíveis dificulta a percepção sobre o ritmo de destruição da mata e a necessidade de medidas de proteção urgentes.
+                </p>
+            </article>
+
+            <!-- SEÇÃO 2 -->
+            <article class="info-card">
+                <span class="card-number">02</span>
+                <h3 class="card-title">Gamificação e Tecnologia</h3>
+                <p class="card-text">
+                    Como resposta a este problema, o <strong>Guardião do Verde</strong> utiliza a simulação interativa para colocar o usuário no centro da preservação ambiental. Ao comando de um drone de reflorestamento, o jogador vivencia a complexidade de combater incêndios e cultivar novas árvores em tempo real.
+                </p>
+                <p class="card-text">
+                    A aplicação foi desenvolvida com tecnologias web leves e dinâmicas, integrando mecânicas de plantio em diferentes fases de crescimento, controle de umidade, combate ao fogo e gestão de recursos numa experiência fluida e educativa.
+                </p>
+            </article>
+
+            <!-- SEÇÃO 3 -->
+            <article class="info-card">
+                <span class="card-number">03</span>
+                <h3 class="card-title">Impacto e Conscientização</h3>
+                <p class="card-text">
+                    Mais do que um jogo, esta iniciativa procura transformar a relação do usuário com a causa ambiental. Ao enfrentar na prática os desafios do combate ao desmatamento e do cultivo da mata, o usuário desenvolve uma visão crítica e consciente sobre a relevância do reflorestamento para o futuro do planeta.
+                </p>
+            </article>
+        </section>
+
+        <div class="secoes-footer">
+            <button class="btn-secondary" onclick="mostrarHero()">← Voltar à Apresentação Inicial</button>
+        </div>
+    </main>
+
+    <!-- PÁGINA 3: TELA DO JOGO CANVAS -->
+    <main id="viewJogo" class="view-container hidden">
+        <div class="game-wrapper">
+            <div class="game-controls-help">
+                <p>🎮 <strong>Controles:</strong> Setas / WASD = Mover Drone | <strong>ESPAÇO</strong> = Soltar Água | <strong>E / SHIFT</strong> = Plantar Semente | <strong>RIO (Lado Esquerdo):</strong> Voe baixo para reabastecer água</p>
+            </div>
+            <canvas id="gameCanvas" width="850" height="480"></canvas>
+            <button id="startBtn" class="btn-start-game">[INICIAR MISSÃO DE REFLORESTAMENTO]</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
