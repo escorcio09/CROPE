@@ -7,7 +7,11 @@
 }
 
 body {
-    background-color: #0b1329;
+    background-image: linear-gradient(rgba(11, 19, 41, 0.85), rgba(11, 19, 41, 0.85)), url('floresta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #f8fafc;
     min-height: 100vh;
     display: flex;
